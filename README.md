@@ -2,15 +2,13 @@ Sometimes it is useful to see the load distribution across RX rings, uneven load
 
  
 
-Srcipt takes "show tech" as input. Example below, it will show the input packets, no buffer, overruns counts and percentages of internal-data interfaces in same order as they appear in show tech and it will plot graph was RX rings use percentages.
+Srcipt takes "show tech" as input. Example below, it will show theinternal-data interfaces  input packets, no buffer and overruns counts and percentages w.r.t input packets, RX ring will current or previous low block, threshold script is using is 10 and it will plot graph was RX rings use percentages.
 
  
 
-RAJATSH-M-V7QW:LIST_PYTHON rajatsh$ python3 RX_Rings.py
-
  
 
-Please enter the file path: 27tech
+Please enter the path to the file: 27tech
 
 Packets_Input: 1409805310570
 
@@ -34,41 +32,138 @@ No Buffer Percentage: 0.03%
 
 Overruns Percentage: 0.00%
 
+ 
 
+Potential RX rings with Current or Previous Low Blocks for Interface Block Number 1 ,low Blocks threshold is 10:
 
- Normally in tickets like these next step would be to look as asp load balancing settings.
+RX[00]: curr low: 511 2
+
+RX[01]: curr low: 512 2
+
+RX[02]: curr low: 511 2
+
+RX[03]: curr low: 509 2
+
+RX[04]: curr low: 512 2
+
+RX[05]: curr low: 512 2
+
+RX[06]: curr low: 511 2
+
+RX[07]: curr low: 512 2
+
+RX[08]: curr low: 512 2
+
+RX[09]: curr low: 512 2
+
+RX[10]: curr low: 512 2
+
+RX[11]: curr low: 512 2
+
+RX[12]: curr low: 512 2
+
+RX[13]: curr low: 512 2
+
+RX[14]: curr low: 509 2
+
+RX[15]: curr low: 512 2
+
+RX[16]: curr low: 512 2
+
+RX[17]: curr low: 509 2
+
+RX[18]: curr low: 512 2
+
+RX[19]: curr low: 512 2
+
+RX[20]: curr low: 512 2
+
+RX[21]: curr low: 512 2
+
+RX[22]: curr low: 512 2
+
+RX[23]: curr low: 512 2
+
+RX[24]: curr low: 512 2
+
+RX[25]: curr low: 512 2
+
+RX[26]: curr low: 512 2
+
+RX[27]: curr low: 512 2
+
+RX[28]: curr low: 511 2
+
+RX[29]: curr low: 512 2
+
+RX[30]: curr low: 510 2
+
+RX[31]: curr low: 512 2
 
  
 
-https://www.cisco.com/c/en/us/td/docs/security/asa/asa-cli-reference/A-H/asa-command-ref-A-H/ar-az-c...
+Potential RX rings with Current or Previous Low Blocks for Interface Block Number 2 ,low Blocks threshold is 10:
 
- 
+RX[00]: curr low: 512 2
 
- 
+RX[01]: curr low: 512 2
 
-Please note:
+RX[02]: curr low: 512 2
 
- 
+RX[03]: curr low: 512 2
 
-For some input files i checked this error is coming:
+RX[04]: curr low: 512 2
 
- 
+RX[05]: curr low: 512 2
 
-RAJATSH-M-V7QW:LIST_PYTHON rajatsh$ python3 RX_Rings.py
+RX[06]: curr low: 511 2
 
-Please enter the file path: /Users/rajatsh/Downloads/ITTHK-TES-CLOUD-ASA-1
+RX[07]: curr low: 512 2
 
-An error occurred: 'utf-8' codec can't decode byte 0xef in position 2116: invalid continuation byte
+RX[08]: curr low: 512 2
 
- 
+RX[09]: curr low: 512 2
 
-Easy way would be to rencode the input file as utf-8, refer to link below;
+RX[10]: curr low: 512 2
 
- 
+RX[11]: curr low: 512 2
 
-https://medium.com/code-kings/python3-fix-unicodedecodeerror-utf-8-codec-can-t-decode-byte-in-positi...
+RX[12]: curr low: 512 2
 
- 
+RX[13]: curr low: 512 2
 
-If you know a better solution, please comment and i will add it.
+RX[14]: curr low: 512 2
 
+RX[15]: curr low: 512 2
+
+RX[16]: curr low: 512 2
+
+RX[17]: curr low: 512 2
+
+RX[18]: curr low: 512 2
+
+RX[19]: curr low: 512 2
+
+RX[20]: curr low: 512 2
+
+RX[21]: curr low: 512 2
+
+RX[22]: curr low: 512 2
+
+RX[23]: curr low: 512 2
+
+RX[24]: curr low: 511 2
+
+RX[25]: curr low: 512 2
+
+RX[26]: curr low: 512 2
+
+RX[27]: curr low: 512 2
+
+RX[28]: curr low: 512 2
+
+RX[29]: curr low: 511 2
+
+RX[30]: curr low: 512 2
+
+RX[31]: curr low: 512 2
