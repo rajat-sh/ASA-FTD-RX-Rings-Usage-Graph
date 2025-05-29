@@ -167,3 +167,12 @@ RX[29]: curr low: 511 2
 RX[30]: curr low: 512 2
 
 RX[31]: curr low: 512 2
+
+
+
+
+Note:
+
+ 
+
+If the RX rings number is more than 100, then plot will not show the RX rings will less than 1% usage. 
